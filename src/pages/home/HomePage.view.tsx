@@ -86,26 +86,28 @@ const HomePage: React.FunctionComponent = (props) => {
         </Swiper>
       </Box>
 
-      <div style={{ width: 'max-content', overflowX: 'scroll', marginTop: 12 }}>
-        {
-          Tabs.map((item, index) => {
-            return (
-              <Button
-                key={index}
-                size="medium"
-                variant="tertiary"
-                onClick={() => setActiveTab(item)}
-                // className=" bg-primary text-white rounded-lg h-12"
-                style={{ color: activeTab === item ? Colors.WHITE : Colors.BLACK, backgroundColor: activeTab === item ? Colors.PRIMARY : Colors.WHITE, marginRight: 12 }}
-                type="highlight"
-              >
-                {item}
-              </Button>
-            )
-          })
-        }
+      <div className="w-full overflow-x-auto">
+        <div className="flex space-x-4 p-4">
+          {
+            Tabs.map((item, index) => {
+              return (
+                <Button
+                  key={index}
+                  size="medium"
+                  variant="tertiary"
+                  onClick={() => setActiveTab(item)}
+                  // className=" bg-primary text-white rounded-lg h-12"
+                  className="flex-shrink-0"
+                  style={{ color: activeTab === item ? Colors.WHITE : Colors.BLACK, backgroundColor: activeTab === item ? Colors.PRIMARY : Colors.WHITE, width: 'fit-content' }}
+                  type="highlight"
+                >
+                  {item}
+                </Button>
+              )
+            })
+          }
 
-
+        </div>
       </div>
 
 
@@ -142,7 +144,7 @@ const HomePage: React.FunctionComponent = (props) => {
 
 
 
-      <BottomNavigation
+      {/* <BottomNavigation
         fixed
         activeKey={activeTab}
         onChange={(key) => setActiveTab(key)}
@@ -177,7 +179,7 @@ const HomePage: React.FunctionComponent = (props) => {
           icon={<Icon icon="zi-user" />}
           activeIcon={<Icon icon="zi-user-solid" />}
         />
-      </BottomNavigation>
+      </BottomNavigation> */}
     </Page>
   );
 };
