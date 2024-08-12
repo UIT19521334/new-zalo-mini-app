@@ -87,7 +87,7 @@ const HomePage: React.FunctionComponent = (props) => {
       </Box>
 
       <div className="w-full overflow-x-auto">
-        <div className="flex space-x-4 p-4">
+        <div className="flex space-x-2 pt-4 mb-4">
           {
             Tabs.map((item, index) => {
               return (
@@ -111,7 +111,7 @@ const HomePage: React.FunctionComponent = (props) => {
       </div>
 
 
-      <div className="relative w-full h-64   mt-4">
+      <div className="relative w-full h-64 mt-4" onClick={() => navigate('/news')}>
         <img
           src="https://www.japfa.com/assets/filemanager/07062401-Toba-Tilapia_at-FairPrice.jpg"
           alt="Example"
