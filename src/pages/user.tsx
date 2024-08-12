@@ -58,6 +58,13 @@ const UserPage = () => {
           </List>
         </div>
       </Box>
+
+      <Button onClick={() => {
+        navigate(-1);
+      }} variant="secondary"
+        fullWidth
+      >Go back</Button>
+
     </Page>
   );
 };

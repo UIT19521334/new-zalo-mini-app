@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { List, Page, Icon, useNavigate } from "zmp-ui";
 import UserCard from "components/user-card";
 
-const HomePage: React.FunctionComponent = () => {
+const MainPage: React.FunctionComponent = () => {
   const navigate = useNavigate();
   return (
     <Page className="page">
@@ -31,4 +31,4 @@ const HomePage: React.FunctionComponent = () => {
   );
 };
 
-export default HomePage;
+export default MainPage;

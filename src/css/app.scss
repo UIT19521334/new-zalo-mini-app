@@ -1,3 +1,77 @@
+:root {
+  --zmp-primary-color: #f6955d;
+  --zmp-page-bg-color: #f4f5f6;
+  --zmp-primary-color-rgb: 239, 23, 36;
+}
+
+.zaui-btn-primary,
+.zaui-btn-primary:active {
+  background-color: var(--zmp-primary-color);
+}
+
+.zaui-btn-secondary {
+  color: var(--zmp-primary-color);
+  background: rgba(var(--zmp-primary-color-rgb), 0.1);
+
+  &:active {
+    background: rgba(var(--zmp-primary-color-rgb), 0.2);
+  }
+}
+
+.zaui-btn-tertiary {
+  color: var(--zmp-primary-color);
+
+  &:active {
+    background: rgba(var(--zmp-primary-color-rgb), 0.1);
+  }
+}
+
+
+.zaui-spinner-ring {
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    rgba(255, 255, 255, 0.0001) -89.96deg,
+    rgba(255, 255, 255, 0.0001) 180.44deg,
+    var(--zmp-primary-color) 258.75deg,
+    var(--zmp-primary-color) 270deg,
+    rgba(255, 255, 255, 0.0001) 270.04deg,
+    rgba(255, 255, 255, 0.0001) 540.44deg
+  );
+}
+
+.zaui-spinner-dot::after {
+  background-color: var(--zmp-primary-color);
+}
+
+.zaui-radio-checked .zaui-radio-checkmark {
+  background-color: var(--zmp-primary-color);
+}
+
+.zaui-select-option-selected {
+  color: var(--zmp-primary-color);
+}
+
+.zaui-input:hover,
+.zaui-input:focus,
+.zaui-input:focus-visible {
+  border-color: var(--zmp-primary-color);
+}
+
+.zaui-input-affix-wrapper:hover,
+.zaui-input-affix-wrapper:focus,
+.zaui-input-affix-wrapper:focus-visible {
+  border-color: var(--zmp-primary-color);
+}
+
+.zaui-bottom-navigation-item-active {
+  color: var(--zmp-primary-color);
+}
+
+
+
+
+
+
 .page {
   padding: 16px 16px 96px 16px;
 }
