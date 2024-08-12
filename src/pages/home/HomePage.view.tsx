@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Sheet, Button, Page, Text, useNavigate, Header, BottomNavigation, Icon, Input, Box, Swiper } from "zmp-ui";
+import { Sheet, Button, Page, Text, useNavigate, Header, BottomNavigation, Icon, Input, Box, Swiper, List } from "zmp-ui";
 import Colors from "../../constant/colors";
 
 const HomePage: React.FunctionComponent = (props) => {
@@ -86,8 +86,7 @@ const HomePage: React.FunctionComponent = (props) => {
         </Swiper>
       </Box>
 
-      <div style={{ width: 'max-content', overflowX: 'auto', marginTop: 12 }}>
-
+      <div style={{ width: 'max-content', overflowX: 'scroll', marginTop: 12 }}>
         {
           Tabs.map((item, index) => {
             return (
@@ -108,6 +107,40 @@ const HomePage: React.FunctionComponent = (props) => {
 
 
       </div>
+
+
+      <div className="relative w-full h-64   mt-4">
+        <img
+          src="https://www.japfa.com/assets/filemanager/07062401-Toba-Tilapia_at-FairPrice.jpg"
+          alt="Example"
+          className="object-cover w-full h-full rounded-2xl"
+        />
+        <div className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 rounded-2xl">
+          <h1 className="text-white text-3xl font-bold mb-6 text-left ml-6">With TOBA TILAPIA, Japfa delivers premium products</h1>
+        </div>
+      </div>
+      <div className="relative w-full h-64 mt-4">
+        <img
+          src="https://www.japfa.com/assets/filemanager/07062402-Toba-Tilapia_at-FairPrice.jpg"
+          alt="Example"
+          className="object-cover w-full h-full rounded-2xl"
+        />
+        <div className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 rounded-2xl">
+          <h1 className="text-white text-3xl font-bold mb-6 text-left ml-6">The export of TOBA TILAPIA is also a collaborative effort</h1>
+        </div>
+      </div>
+      <div className="relative w-full h-64   mt-4">
+        <img
+          src="https://www.japfa.com/assets/filemanager/07062403-Toba-Tilapia_at-FairPrice.jpg"
+          alt="Example"
+          className="object-cover w-full h-full rounded-2xl"
+        />
+        <div className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 rounded-2xl">
+          <h1 className="text-white text-3xl font-bold mb-6 text-left ml-6">The launch of TOBA TILAPIA in Singapore was welcomed</h1>
+        </div>
+      </div>
+
+
 
       <BottomNavigation
         fixed
