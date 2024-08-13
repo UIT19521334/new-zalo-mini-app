@@ -1,16 +1,14 @@
 {
   "app": {
-    "title": "new-zalo-mini-app",
-    "headerTitle": "zmp-blank-templates",
-    "headerColor": "#1843EF",
+    "title": "Japfa Apps",
+    "headerColor": "#ca6f1e",
+    "headerTitle": "Japfa News",
     "textColor": "white",
-    "textAlign": "left",
-    "statusBarColor": "#1843EF",
     "leftButton": "back",
     "statusBar": "normal",
-    "actionBarHidden": false,
-    "hideAndroidBottomNavigationBar": false,
-    "hideIOSSafeAreaBottom": false
+    "actionBarHidden": true,
+    "hideAndroidBottomNavigationBar": true,
+    "hideIOSSafeAreaBottom": true
   },
   "debug": false,
   "pages": [],
