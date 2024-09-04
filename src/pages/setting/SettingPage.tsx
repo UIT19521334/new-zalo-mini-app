@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
-import { List, Page, Icon, useNavigate } from "zmp-ui";
+import { List, Page, Icon, useNavigate, Button } from "zmp-ui";
 import UserCard from "components/user-card";
 
-const MainPage: React.FunctionComponent = () => {
+const SettingPage: React.FunctionComponent = () => {
   const navigate = useNavigate();
   return (
     <Page className="page">
@@ -27,8 +27,18 @@ const MainPage: React.FunctionComponent = () => {
           </List.Item>
         </List>
       </div>
+      <Button
+        onClick={() => {
+          navigate(-1);
+        }}
+        variant="primary"
+        fullWidth
+        
+      >
+        Go back
+      </Button>
     </Page>
   );
 };
 
-export default MainPage;
+export default SettingPage;

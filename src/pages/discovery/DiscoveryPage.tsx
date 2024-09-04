@@ -2,11 +2,12 @@
 import React, { useState } from "react";
 import { Sheet, Button, Page, Text, useNavigate, Header, BottomNavigation, Icon, Input, Box, Swiper, List } from "zmp-ui";
 import Colors from "../../constant/colors";
+import ZaloBottomTabs from "components/bottom-tabs";
 
-const HomePage: React.FunctionComponent = (props) => {
+const DiscoverPage: React.FunctionComponent = (props) => {
   const [actionSheetOpened, setActionSheetOpened] = useState(false);
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState("Healthy");
+  const [activeTab, setActiveTab] = useState("discovery");
 
   const Tabs = ["Healthy", "Technology", "Finance", "Arts"];
 
@@ -391,48 +392,8 @@ theme: {
           </div>
         </div>
       </article>
-
-
-
-
-      {/* <BottomNavigation
-        fixed
-        activeKey={activeTab}
-        onChange={(key) => setActiveTab(key)}
-      >
-        <BottomNavigation.Item
-          key="chat"
-          label="Tin Nhắn"
-          icon={<Icon icon="zi-chat" />}
-          activeIcon={<Icon icon="zi-chat-solid" />}
-        />
-        <BottomNavigation.Item
-          label="Danh bạ"
-          key="contact"
-          icon={<Icon icon="zi-call" />}
-          activeIcon={<Icon icon="zi-call-solid" />}
-        />
-        <BottomNavigation.Item
-          label="Khám phá"
-          key="discovery"
-          icon={<Icon icon="zi-more-grid" />}
-          activeIcon={<Icon icon="zi-more-grid-solid" />}
-        />
-        <BottomNavigation.Item
-          key="timeline"
-          label="Nhật ký"
-          icon={<Icon icon="zi-clock-1" />}
-          activeIcon={<Icon icon="zi-clock-1-solid" />}
-        />
-        <BottomNavigation.Item
-          key="me"
-          label="Cá nhân"
-          icon={<Icon icon="zi-user" />}
-          activeIcon={<Icon icon="zi-user-solid" />}
-        />
-      </BottomNavigation> */}
     </Page>
   );
 };
 
-export default HomePage;
+export default DiscoverPage;
